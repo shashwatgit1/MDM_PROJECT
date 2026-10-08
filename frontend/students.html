@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>All students · Roll Call</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<main><div class="head"><div><h1>All students</h1><p id="count" aria-live="polite"></p></div>
+<a class="btn primary" href="form.html">Add student</a></div>
+<div class="tools"><input id="q" type="search" placeholder="Search by name or roll number" aria-label="Search students" autofocus>
+<select id="cls" aria-label="Filter by class"><option value="">All classes</option></select></div>
+<div class="table-wrap"><table><thead><tr><th>Roll no</th><th>Name</th><th>Class</th><th>Marks</th><th>Contact</th><th></th></tr></thead>
+<tbody id="rows"></tbody></table></div>
+<dialog id="dlg"><h2>Delete student?</h2><p id="dlgText"></p><menu><button class="btn" value="no">Keep</button><button class="btn danger" value="yes">Delete</button></menu></dialog></main>
+<script type="module" src="js/students.js"></script></body></html>

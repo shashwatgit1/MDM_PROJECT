@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student form · Roll Call</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<main><div class="head"><div><h1 id="title">Add student</h1><p>All fields are required.</p></div></div>
+<section class="panel"><form id="f" novalidate>
+<div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="off"><span class="err" data-for="name"></span></div>
+<div class="field"><label for="roll_no">Roll number</label><input id="roll_no" name="roll_no" autocomplete="off"><span class="err" data-for="roll_no"></span></div>
+<div class="field"><label for="class_name">Class</label><input id="class_name" name="class_name" placeholder="10-A" autocomplete="off"><span class="err" data-for="class_name"></span></div>
+<div class="field"><label for="marks">Marks (0–100)</label><input id="marks" name="marks" type="number" min="0" max="100" step="0.01"><span class="err" data-for="marks"></span></div>
+<div class="field wide"><label for="contact">Contact number</label><input id="contact" name="contact" inputmode="numeric" placeholder="10-digit mobile number"><span class="err" data-for="contact"></span></div>
+<div class="actions"><button class="btn primary" id="save">Save student</button><a class="btn" href="students.html">Cancel</a></div>
+</form></section></main>
+<script type="module" src="js/form.js"></script></body></html>
